@@ -1,0 +1,16 @@
+URL "https://dog.ceo/api/breeds/image/random" 
+
+- Using AJAX send a GET request to above url and log the response data
+- Get the image url from the response and add an image tag with that url (ajax)
+
+data = {title: 'BMW Pencil'}
+
+- Send the above data to 'https://dummyjson.com/products/add' as POST request and log the response 
+    (use  - headers: { 'Content-Type': 'application/json' })   (ajax)
+
+- Repeat the above 3 tasks using FETCH API
+
+- Calculate the area of a cicle with radius=12
+- Calculate sin and cos of these angles (0 , 45 , 180) de  grees
+- Calculate the min and max of (1,4,3,16,23,2)
+- Console log a random integer between 0 and 6

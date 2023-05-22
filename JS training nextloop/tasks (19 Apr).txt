@@ -1,0 +1,15 @@
+- Add a item to localstorage called counter
+- Increment the counter item whenever user visits the page
+- Display the counter value in the html doc
+
+- Console log your latitude and longitude using Geo location api
+- Add a watch position method and track the position of your device.
+
+- Declare a const variable called obj and assign {name:"Rahul"} as value
+- Update the name key of obj to "Rohit"
+
+- Declare a let variable and assign a template string (Template Literal) as its value
+
+- Add an arrow function and console log the value of 'this' keyword.
+
+- Draw the given image using different canvas methods (don't use drawImage)

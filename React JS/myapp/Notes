@@ -1,0 +1,181 @@
+React-- 
+-The React.js is a JavaScript based UI development library.
+-It is used for building interactive user interfaces and web applications.
+-It is a tool for building UI Components.
+-It is used to builds single-page applications(SPA).
+-React allows us to create reusable UI components.
+-It is developed and maintained by Facebook, Jordan Walke created it.   
+-React creates a VIRTUAL DOM in memory. It only changes what needs to be changed. 
+-Sone Apps with React are- Netflix, Instagram, WhatsApp, Myntra, Facebook.
+
+Setting up react environment--
+-For react we have to install node.js and npm.
+-npm automatically get install with Node.
+-After installing node we can check its version with node -v & npm's version with npm -v in cmd.
+-Then we can create our react application with-
+npx create-react-app project_name(my-react-app) then hit enter.
+-After setting up everything we need to run our react app so we have to move to the directory by-
+cd project_name(my-react-app) then hit enter.
+-Then run this cmd to run react application-
+npm start
+-So it will start the server & you're good to go.
+
+File and Folder structure of React--
+1. node_modules:- This Folder contain all react js dependencies.
+2. .gitignore:- This file specifies intentionally untracked files that Git should ignore.
+3. package.json:- This file contains dependencies and scripts required for our project. It contains various metadata that is relevant to our project. It also contains file name,version, commands & all the packages.
+4. package-lock.json:- This file holds detailed information on all the dependencies installed based on the package. It is automatically generated for any operations. It contains all the packages history & controls the version.
+5. Public Folder & its files:- It is root folder that gets served as our react app.
+a. favicon.ico:- It is an icon file that is used in index.html as favicon.
+b. index.html:- It is the template file which is served when we run start script to launch our app.
+c. logo192.png & logo512.png:- These our react logo & is used in the template file by default.
+d. manifest.json:- It contains meta files.
+
+6. src folder & its files:- It is the main folder in our react project. It contains components, tests, css files etc.
+a. App.css:- It contains styles of our react component(i.e. App.js).
+b. App.js:- This file has very basic react component that will get loaded under index.js file.
+c. App.test.js:- It is used for unit test cases.
+d. index.css:- contains styles for general setup of our app.
+e. index.js:- It is the entry point of our react app & it renders our component.
+f. logo.svg:- svg file of react logo.
+g. reportWebVitals.js:- It is used to measure the performance of application.
+g. setupTests.js:- This file setup tests and runs them.
+
+Components--
+-Components are like functions that returns HTML elements.
+-It is a piece of code that can be reuse and independent but it is more powerful than functions.
+-Header and Footer are best examples of components.
+-There are two types of components- Functional Components, Class Components.
+-When creating a react component, the component's name must start with an upper case letter.
+
+1.Functional Components-
+-A Function Component also returns HTML. But it is more useful & requires much less code.
+
+2.Class Components-
+-A Class Component must includes the "extends React.Component" statement. This statement creates an inheritance to React.Component.
+-The class component also requires a render() method, this method returns HTML.
+
+JSX--
+-JSX stands for JavaScript XML.
+-It allows us to write HTML in react.
+-JSX converts HTML tags into react elements.
+-With JSX we can write expressions inside curly braces{} for ex.-{10+10}.
+-For adding multiple HTML elements we have to wrapped it inside <div>.
+-We have to use className instead of class.
+
+React Events--
+-Just like HTML DOM events, React can perform actions based on user events.
+-React has the same events as HTML: click, change, mouseover etc.
+-React events are written in camelCase syntax such as onClick instead of onclick.
+-React event handlers are written inside curly braces{} such as onClick={click} instead of onclick="click()".
+
+React State--
+-React component has a built-in "state" object.
+-The "state" object is where you store property and values that belong to the component.
+-When the "state" object changes, the component re-renders.
+
+Note:- We don't use variables much because in variables component don't get update but in state component gets update and reflect the changes.
+
+-For using the state we have to import the useState from react for functional components and React from react for class components.
+  
+React Props--
+-props stands for properties.  
+-Props are arguments passed into React Components.
+-Props are passed to components via HTML attributes.
+-To send props into a component, use the same syntax as HTML attributes.
+
+Get Input box value--
+
+Hide and Show Elements--
+
+Form Handling--
+
+Conditional Rendering--
+
+Form Validation--
+
+Pass Function as Props--
+
+Counter with State--
+
+Life Cycle Methods--
+-Lifecycle methods are series of events that happen throughout the birth, growth and death of a React Component.
+-Life cycle methods work when our component is loaded, updated with states or props and component is removed.
+-Each component in React has a life cycle which you can monitor and manipulate during its three main phases.
+-The three phases are: Mounting, Updating and Unmounting.
+
+1.Mounting:- Mounting means putting elements into the DOM. like rendering the component for first time.
+2.Updating:- The next phase in the lifecycle is when a component is updated.
+-A component is updated whenever there is a change in component's state or props.
+3.Unmounting:- Unmounting is when a component is removed from a DOM.
+
+1.Mounting-
+a.constructor() method:- The constructor() method is called before anything else, when the component is
+initiated.
+b.render() method:- The render() method is required and is the method that actually outputs the HTML to the DOM.
+c.componentDidMount() method:- The componentDidMount() method is called after the component is rendered.It is use for API calling bcs till then our HTML & Dom is ready.
+
+2.Updating-
+a.componentDidUpdate() method:- The componentDidUpdate() method is called after the component is updated in the DOM.
+b.shouldComponentUpdate() method:- In the shouldComponentUpdate() method we can return a Boolean value that specifies wheteher React should continue with the rendering or not.
+-The default value is true.
+
+3.Unmounting-
+c.componentWillUnmount() method:- The componentWillUnmount() method is called when the component is about to be removed from the DOM.
+
+React Hooks--
+-Hooks allow functional components to have access to state and and other react features.
+-With Hook, we can use class component features in functional components such as state, Life cycle etc.
+-Whnever you see the word use, it means it is Hook.
+-We must import Hooks from react such as import {useState} from "react";
+-There are 3 rules for Hooks-
+a.Hooks can only be called inside React function components.
+b.Hooks can only be called at the top level of a component.
+c.Hooks cannot be conditional.
+
+1.useState Hook-
+-The useState Hook allows us to track state in a functional component.
+-First we have to import it like import React, {useState} from "react";
+-We initialize our state by calling useState & it have 2 values-
+const [data,setData]=useState("");
+-data is our current state.
+-setData is a function that updates the state.
+
+2.useEffect Hook-
+-The useEffect Hook allows you to perform side effects in your components
+-side effects such as fetching data, directly updating the DOM and timers.
+-useEffect accepts 2 arguments. The second argument is optional-
+useEffect(<function>,<dependency>)
+-useEffect Hook is a combination of componentDidMount, componentDidUpdate and componentWillUnmount.
+
+Styling React using CSS--
+-There are 3 ways to style React with CSS:-
+1.Inline Styling.
+2.CSS Stylesheets.
+3.CSS Modules.
+
+1.Inline Styling- To style an element with the inline style attribute, the value must be an JavaScript Object.
+-Property names must be written in camel case syntax such as backgroundColor, textAlign etc.
+
+2.CSS Stylesheets- We can write our CSS style in seperate file, just save the file with .css extension and import it in your application.
+
+3.CSS Modules- CSS Modules are convenient for components that are placed in seperate file.
+-Create the CSS Module with the .module.css extension ex.- style.module.css & import it.
+
+Array Listing with Map Function--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

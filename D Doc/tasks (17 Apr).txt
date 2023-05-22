@@ -1,0 +1,9 @@
+- Create a Constructor Function
+- Add 4 properties and 1 method
+- Create an object instance using the constructor function
+- Add a new method using prototype
+- Console log a property and method of the object instance
+
+- Create a JSON string with nested object
+- Convert JSON string to Javascript object and log the result
+- Convert the Constructor fuction object instance into JSON string 

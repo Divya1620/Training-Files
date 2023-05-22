@@ -1,0 +1,24 @@
+- Destructure ["Tiger","Lion","Dog","Cat","Rat"] and put 'Tiger' and 'Cat' in new variables (tiger,cat)
+- Destructure {username:"John",id:5,age:33} and save username and age in separate variables
+
+- Create a function that accepts 1 argument (id) and returns a promise
+- Resolve the promise if 'id' is greater than 5 and return "User is valid" as resolved data.
+- Reject the promise if 'id' is less than or equal to 5 and return "User is invalid" as error.
+
+- Call the able function and console log the return value (Promise)
+- Handle the resolve state using 'then' and console log the resolved data
+- Handle the reject state using 'catch' and console log the error
+
+- Call the function again and await the result (using async await)
+- Console log the awaited result 
+
+
+- Create a Class called 'Animal' -properties => size,speed -methods => walk() -static methods => info()
+- Create a Child Class called 'Bear' -properties => color -methods => eat()
+
+
+//This won't work on local file (only works for http(s) requests)
+//To create a server run 'python -m http.server 9000' in the folder containing the html file
+//Name the file index.html
+- Create a new js file and export a variable and function defined in this file.
+- Import the variable and function in another file

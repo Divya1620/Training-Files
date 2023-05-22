@@ -1,0 +1,133 @@
+**First Day Training- 27/03/2023**
+1.How to run js- we can run it on browser, with live server or in vs code terminal.
+-paste the html file's path on browser so our page will be displayed.
+-for live server, first install the live server extension then click on go live or open with live server.
+-for vs code terminal, you should have node install in your system then open vs code terminal & in the terminal write node then file name (ex.- node index.js) & it will run only js files.
+
+2.How to add js-we can add js in 2 ways internally or externally.
+-In Internal way,we add js either in head tag(before </head>) or in body tag(before </body>).
+-In External way,we create an external file with .js extension & thn write our js code in that external file.
+
+3.when we click on inspect & open the console so we have an option sources.In sources we have our files & folders & inside sources we can click on snippets & there we can create new file & run it there.
+
+4.Variables- They are containers for storing data & values, they're of 3 types var, let & const.
+-var is a global variable. we can redeclared it or reassigned it.
+-let is a local variable. we can reassigned it but can't redeclared it.
+-const have block scope & local variable. we can't redeclared or reassigned it & when we declare const at the same time we have to initialize it we can't do it later.
+
+**Second Day- 28/03/2023**
+1.Data Types- Data types describes the different type of data & they are string,number,boolean,null,undefined,array,object & to check which data type it is we can use typeof oprator for it.
+-String is a data type which is written in single or double quotes.
+-Number is a data type which is written without quotes or it can be written as with or without decimal.
+-Boolean contains 2 values true & false.
+-Null is supposed to be nothing it is falsy value & the typeof oprator return an object for null.
+-Undefined means the value has not be assigned or the variable doesn't exist.
+-Array is written in square braces[] & it can contain many values & the typeof oprator return an object for array.
+-Object is written inside curly braces{} & it is a collection of key:value pairs.
+
+2.Operators- Operators assign values to variable & add them together. They are arithmetic,comparison,logical,bitwise & assignment Operators.
+-Arithmetic Operators such as addition+, substraction-, multiplication*, division/, modulous%, increment++, decrement--, exponentiation**.
+-Comparison Operators such as greater than>, less than<, greater than or equal to>=, less than or equal to<=,
+equal to==, not equal to!=, equal value &  equal type===, not equal value or not equal type!==.
+-Logical Operators such as logical AND&&, logical OR||, logical NOT!.
+-Assignment Operators such as =, +=, -=, *=,/= & so on.
+
+**Third Day 29/03/2023**
+1.String
+2.Number
+
+**Fourth Day 30/03/2023**
+1.Functions
+
+**Fifth Day 31/03/2023**
+-No Session.
+
+**Sixth Day 03/04/2023**
+1.Callback Functions.
+2.Async await. 
+3.IIFE.
+4.Conditions.
+5.Ternary Operator.
+
+**Seventh Day 04/04/2023**
+1.Switch Case.
+2.Try & Catch method.
+3.Global Events.
+4.Keyboard Events.
+
+**8th Day 05/04/2023**
+1.Mouse based events.
+2.Touch based events.
+3.Event listeners.
+4.addEventListeners.
+5.removeEventListeners.
+
+**9th Day 06/04/2023**
+1.Js Event Propogation or Delegation.
+2.Event Bubbling.
+3.Event Capturing.
+4.Js DOM
+5.Js Style.
+
+**10th Day 07/04/2023**
+1.Js console object.
+2.Js Loops
+3.while loop.
+4.do while loop.
+5.for loop.
+
+**11th Day 10/04/2023**
+1.Js Objects.
+2.Js Arrays.
+3.Js OOPS.
+
+**12th Day 11/04/2023**
+1.setTimeout.
+2.setInterval.
+3.clearTimeout.
+4.clearInterval.
+
+**13th Day 12/04/2023**
+1.Date Object.
+2.Window Objects.
+
+**14th Day 13/04/2023**
+1.Screen Object.
+2.Regular Expression (RegExp).
+3.Form Validation.
+4.Cookies.
+
+**15th Day 14/04/2023**
+1.Testing & Debugging using browser tools.
+2.Callback Functions.
+
+**16th Day 17/04/2023**
+1.Constructor Functions.
+2.Prototypes.
+3.JSON & its methods-
+-JSON.parse();
+-JSON.stringify();
+
+**17th Day 18/04/2023**
+1.JS AJAX.
+2.Fetch API.
+3.Math Objcet & its methods.
+4.Closures.
+
+**18th Day 19/04/2023**
+1.Local & Session Storage.
+2.Geolocation API.
+3.ES6 Concepts-
+-let/const
+-Template Literals
+-Arrow Functions
+4.HTML5 Canvas & its methods.
+
+**19th Day 20/04/2023**
+1.Destructuring.
+2.Promise/Async Await.
+3.Modules.
+4.Class & class Inheritance.
+
+**20th Day 21/04/2023**
+No Session.
