@@ -36,6 +36,14 @@ import InlineStyle from './Users';
 import CssStylesheet from './Users';
 import CssModules from './Users';
 import ArrayWithMap from './Users';
+import PackingList from './Users';
+import MyComponent from './Users';
+import CrudOperation from './Users';
+import CrudWithJson from './Users';
+import ListWithMap from './Users';
+import ListWithFilter from './Users';
+import TableWithMap from './Users';
+import Avatar from './Users';
 
 function App() {
   //For props with functional component--
@@ -188,10 +196,24 @@ function App() {
     {/* <CssModules/> */}
 
     {/* Array Listing with Map Function-- */}
-    <ArrayWithMap/>
+    {/* <ArrayWithMap/> */}
 
+    {/* Conditional Rendering-- */}
+    {/* <PackingList/> */}
 
+    {/* Performing addition, deletion, and updating operations on data -- */}
+    {/* <MyComponent/> */}
+    {/* <CrudOperation/>  */}
+    
+    {/* Rendering Lists-- */}
+    {/* 1.Rendering data from array with map- */}
+    {/* <ListWithMap/> */}
+    {/* <TableWithMap/> */}
+    
+    {/* 2.Filtering array of items- */}
+    {/* <ListWithFilter/> */}
 
+    <Avatar/>
 
     
 

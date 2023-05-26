@@ -164,6 +164,16 @@ Styling React using CSS--
 
 Array Listing with Map Function--
 
+Conditional Rendering--
+-Components will need to display different things depending on different conditions.
+-So in React , we can conditionally render JSX using JavaScript syntax like if statements, && and ? : operators.
+
+Performing addition, deletion, and updating operations on data --
+
+Performing CRUD App with React and JSON Server--
+
+Rendering Lists--
+-We can use filter() and map() method to filter and transform array of data into an array of components.
 
 
 
