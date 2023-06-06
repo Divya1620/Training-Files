@@ -44,6 +44,13 @@ import ListWithMap from './Users';
 import ListWithFilter from './Users';
 import TableWithMap from './Users';
 import Avatar from './Users';
+import PassingProps from './Users';
+import PC from './Users';
+import EventHandlers from './Users';
+import ReadingPropsInEvents from './Users';
+import NamingEventHandlers from './Users';
+import Toolbar from './Users';
+import FormDropdown from './Users';
 
 function App() {
   //For props with functional component--
@@ -84,7 +91,6 @@ function App() {
     // For useEffect Hook-
     const [data,setData] = useState(10);
     const [count,setCount] = useState(100);
-
 
   return (
     <div className="App">
@@ -213,10 +219,25 @@ function App() {
     {/* 2.Filtering array of items- */}
     {/* <ListWithFilter/> */}
 
-    <Avatar/>
-
+    {/* Passing Props to a component-- */}
+    {/* <PassingProps /> */}
+    {/* <PC /> */}
     
-
+    {/* Events and event handlers-- */}
+    {/* -Adding event handlers- */}
+    {/* <EventHandlers/> */}
+    
+    {/* -Reading props in event handlers- */}
+    {/* <ReadingPropsInEvents/> */}
+    
+    {/* -Naming event handlers props- */}
+    {/* <NamingEventHandlers/> */}
+    
+    {/* -Event Propagation- */}
+    {/* <Toolbar/> */}
+    
+    {/* FormDropdown-- */}
+    <FormDropdown/>
     </div>
   );
 }

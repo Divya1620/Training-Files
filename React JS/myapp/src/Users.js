@@ -578,42 +578,42 @@
 // Conditional Rendering--
 // 1. if else statement-
 // function Item({ name, isPacked }) {
-    //Normal Rendering--
-    // return <li className="item">{name}</li>
+//Normal Rendering--
+// return <li className="item">{name}</li>
 
-    //Rendering with if else--
-    // if(isPacked){
-    //     // return <li className="item">{name} is packed.✔</li>
-    //     return null
-    // }else{
-    //     return <li className="item">{name} is not packed.✖</li>
-    // }
+//Rendering with if else--
+// if(isPacked){
+//     // return <li className="item">{name} is packed.✔</li>
+//     return null
+// }else{
+//     return <li className="item">{name} is not packed.✖</li>
+// }
 
-    //Rendering with ternary operator--
-    // return(
-    //     <li>
-    //         {isPacked ? name+'✔':name+'✖'}
-    //     </li>
-    // )
+//Rendering with ternary operator--
+// return(
+//     <li>
+//         {isPacked ? name+'✔':name+'✖'}
+//     </li>
+// )
 
-    // return (
-    //     <li className="item">
-    //         {isPacked ? (
-    //             name + ' is ✔ packed'
-    //         ) : (
-    //             <del>
-    //                 {name+' is ✖ packed'}
-    //             </del>
-    //         )}
-    //     </li>
-    // )
+// return (
+//     <li className="item">
+//         {isPacked ? (
+//             name + ' is ✔ packed'
+//         ) : (
+//             <del>
+//                 {name+' is ✖ packed'}
+//             </del>
+//         )}
+//     </li>
+// )
 
-     //Rendering with && operator--
-    // return(
-    //     <li>
-    //         {name} {isPacked && '✔' }
-    //     </li>
-    // )
+//Rendering with && operator--
+// return(
+//     <li>
+//         {name} {isPacked && '✔' }
+//     </li>
+// )
 // }
 // export default function PackingList() {
 //     return (
@@ -760,51 +760,51 @@
 // export default MyComponent;
 
 // export default function CrudOperation(){
-    //GET Post-
-    // fetch("https://jsonplaceholder.typicode.com/posts")
-    // .then( (res) => res.json())
-    // .then( (data) => {
-    //     console.log(data);
-    // })
-    // .catch( (error) => {
-    //     console.log(error);
-    // })
+//GET Post-
+// fetch("https://jsonplaceholder.typicode.com/posts")
+// .then( (res) => res.json())
+// .then( (data) => {
+//     console.log(data);
+// })
+// .catch( (error) => {
+//     console.log(error);
+// })
 
-    //CREATE a Post-
-    // fetch("https://jsonplaceholder.typicode.com/posts", {
-    //     method: 'POST',
-    //     body: JSON.stringify({
-    //         title: 'foo',
-    //         body: 'bar',
-    //         userId: 0
-    //     }),
-    //     headers: {
-    //         "Content-type": "application/json; charset=UTF-8"
-    //     },
-    // })
-    // .then( (res) => res.json())
-    // .then( (data) => {
-    //     console.log(data);
-    // })
+//CREATE a Post-
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//     method: 'POST',
+//     body: JSON.stringify({
+//         title: 'foo',
+//         body: 'bar',
+//         userId: 0
+//     }),
+//     headers: {
+//         "Content-type": "application/json; charset=UTF-8"
+//     },
+// })
+// .then( (res) => res.json())
+// .then( (data) => {
+//     console.log(data);
+// })
 
-    //UPDATE a Post-
-    // fetch("https://jsonplaceholder.typicode.com/posts/10", {
-    //     method: 'PUT',
-    //     body: JSON.stringify({
-    //         title: 'foo',
-    //         body: 'bar',
-    //         userId: 0
-    //     }),
-    //     headers: {
-    //         "Content-type": "application/json; charset=UTF-8"
-    //     },
-    // })
-    // .then( (res) => res.json())
-    // .then( (data) => {
-    //     console.log(data)
-    // })
+//UPDATE a Post-
+// fetch("https://jsonplaceholder.typicode.com/posts/10", {
+//     method: 'PUT',
+//     body: JSON.stringify({
+//         title: 'foo',
+//         body: 'bar',
+//         userId: 0
+//     }),
+//     headers: {
+//         "Content-type": "application/json; charset=UTF-8"
+//     },
+// })
+// .then( (res) => res.json())
+// .then( (data) => {
+//     console.log(data)
+// })
 
-    // DELETE a Post-
+// DELETE a Post-
 //     fetch("https://jsonplaceholder.typicode.com/posts/5", {
 //         method: 'DELETE'
 //     })
@@ -953,19 +953,422 @@
 // }
 // export default ListWithFilter;
 
-export default function Avatar(){
-    return(
-        <>
-        <img 
-        className="avatar"
-        src="https://i.imgur.com/1bX5QH6.jpg"
-        alt="Lady's img"
-        width={100}
-        height={100} />
-        </>
-    );
-}
+// Passing Props to a component--
+// Ex.-1 
+// export default function PassingProps(){
+//     return(
+//         <>
+//         <h1>Passing Props to a Component-</h1>
+//         <img style={{borderRadius: '50%'}} 
+//         src="https://cdn.pixabay.com/photo/2017/10/29/18/00/chihuahua-2900362_1280.jpg"
+//         alt="Dog's img" 
+//         width={300}
+//         height={300}
+//         />
+//         </>
+//     )
+// }
+
+// Ex.-2
+// export default function PassingProps(){
+// function Avatar({person,size}){
+//     return(
+//       <>
+//       <img 
+//       src='https://cdn.pixabay.com/photo/2017/10/29/18/00/chihuahua-2900362_1280.jpg'
+//       alt={person.name}
+//       height={size}
+//       width={size} />
+//       <h1>{person.name}</h1>
+//       </>
+//     );
+//   }
+//     return(
+//         <>
+//         <Avatar
+//         person={{name:'Cute Dog'}}
+//         size={200}
+//         />
+//         </>
+//     )
+// }
+
+// import PropsComponent from "./Props";
+// import PropsComponent from './Props';
+// export default function PC(){
+//     return(
+//         <PropsComponent fruit="Mango"/>
+//     )
+// }
+
+// Events and event handlers--
+// -Adding event handlers-
+// export default function EventHandlers(){
+//     function handleClick(){
+//         alert("Clicked function in event handlers.")
+//     }
+//     return(
+//         // <button onClick={handleClick}>
+//         //     Click Mee.!
+//         // </button>
+//         <button onClick={() => {
+//         alert("Clicked Function")
+//         }}>
+//             Click Mee.
+//         </button>
+//     )
+// }
+
+// -Reading props in event handlers-
+// function AlertButton({message, children}){
+//     return(
+//         <button onClick={() => alert(message)}>
+//             {children}
+//         </button>
+//     );
+// }
+// export default function ReadingPropsInEvents(){
+//     return(
+//         <>
+//         <AlertButton message="Let's play a game.!">
+//             Play
+//         </AlertButton>
+//         <AlertButton message="Let's watch a movie.!!">
+//             Watch
+//         </AlertButton>
+//         </>
+//     );
+// }
+
+// -Naming event handlers props-
+// function Button({onSmash, children}){
+//     return(
+//         <button onClick={onSmash}>
+//             {children}
+//         </button>
+//     );
+// }
+// export default function NamingEventHandlers(){
+//     return(
+//         <>
+//         <Button onSmash={() => alert("Lets play cricket..!!")}>
+//         Play Game
+//         </Button>
+//         <Button onSmash={() => alert("Lets watch a web series..!!")}>
+//         Watch Something
+//         </Button>
+//         </>
+//     );
+// }
+
+// -Event Propagation-
+// function Button({onClick, children}){
+//     return(
+//         <button onClick={(e) => {
+//             e.stopPropagation();
+//             onClick()
+//         }}>{children}</button>
+//     )
+// }
+// export default function Toolbar(){
+//     return(
+//         <div style={{backgroundColor:"grey", width:"30%", height:"40px"}}onClick={() => {
+//             alert("You clicked on div element.")
+//         }}>
+//             <Button onClick={() => {
+//                 alert("Playing")
+//             }}>Play Movie</Button>
+//             <Button onClick={() => {
+//                 alert("Uploading")
+//             }}>Upload Image</Button>
+//         </div>
+//     );
+// }
+
+// FormDropdown--
+import React, { useState } from "react";
+import Box from '@mui/material/Box';
+import {Button, buttonClasses, TextField, FormControl, InputLabel, MenuItem, Select, IconButton, Collapse, List, ListItem, ListItemText, ListItemSecondaryAction} from '@mui/material';
+import { styled } from '@mui/system';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
+
+const FormDropdown = () => {
+  const [name, setName] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [country, setCountry] = useState('');
+  const [city, setCity] = useState('');
+  const [dropdownData, setDropdownData] = useState([]);
+  const [expandedUser, setExpandedUser] = useState(null);
+  const [nameError, setNameError] = useState('');
+  const [mobileNumberError, setMobileNumberError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [countryError, setCountryError] = useState('');
+  const [cityError, setCityError] = useState('');
+
+  const [nameHelperText, setNameHelperText] = useState('');
+  const [mobileNumberHelperText, setMobileNumberHelperText] = useState('');
+  const [emailHelperText, setEmailHelperText] = useState('');
+  const [countrylHelperText, setCountrylHelperText] = useState('');
+  const [cityHelperText, setCityHelperText] = useState('');
 
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    switch (name) {
+      case 'name':
+        setName(value);
+        break;
+      case 'mobileNumber':
+        setMobileNumber(value);
+        break;
+      case 'email':
+        setEmail(value);
+        break;
+      case 'country':
+        setCountry(value);
+        break;
+      case 'city':
+        setCity(value);
+        break;
+      default:
+        break;
+    }
+  };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
+    // if (!name || !mobileNumber || !email || !country || !city) {
+    //   // alert("Input fields must be filled out before submitting");
+    //   return;
+    // }
+
+    if(name.trim() === '') {
+      setNameHelperText('Please fill out your name');
+    } else{
+      setNameHelperText('');
+    } 
+
+    if(mobileNumber.trim() === '') {
+      setMobileNumberHelperText('Please fill out your mobile number');
+    } else{
+      setMobileNumberHelperText('');
+    }
+
+    if(email.trim() === '') {
+      setEmailHelperText('Please fill out your email address');
+    } else{
+      setEmailHelperText('');
+    }
+
+    if(country.trim() === '') {
+      setCountrylHelperText('Please fill out your country');
+    } else{
+      setCountrylHelperText('');
+    }
+
+    if(city.trim() === '') {
+      setCityHelperText('Please fill out your city');
+    } else{
+      setCityHelperText('');
+    }
+
+    if(name.trim() === '' || mobileNumber.trim() === '' || email.trim() === '' || country.trim() === ' ' || city.trim() === ''){
+      return;
+    }
+
+    if (name.length < 2 || name.length > 20) {
+      setNameError("Name should be between 2 and 20 characters");
+      return;
+    }
+
+    if (country.length < 2 || country.length > 20) {
+      setCountryError("Country should be between 2 and 20 characters");
+      return;
+    }
+
+    if (city.length < 2 || city.length > 20) {
+      setCityError("City should be between 2 and 20 characters");
+    }
+
+    const mobileNumberRegex = /^\d{10}$/;
+    if (!mobileNumberRegex.test(mobileNumber)) {
+      setMobileNumberError("Invalid Mobile Number");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setEmailError("Invalid Email Address.");
+      return;
+    }
+
+    const formData = {
+      name,
+      mobileNumber,
+      email,
+      country,
+      city
+    };
+
+    setDropdownData((prevData) => [...prevData, formData]);
+
+    setName('');
+    setMobileNumber('');
+    setEmail('');
+    setCountry('');
+    setCity('');
+    setNameError('');
+    setMobileNumberError('');
+    setEmailError('');
+    setCountryError('');
+    setCityError('');
+    setNameHelperText('');
+    setMobileNumberHelperText('');
+    setEmailHelperText('');
+    setCountrylHelperText('');
+    setCityHelperText('');
+  };
+
+  // const handleExpandUser = (index) => {
+  //   setExpandedUser(index === expandedUser ? null : index);
+  // };
+  
+  const handleExpandUser = (index) => {
+    if (index === expandedUser) {
+      setExpandedUser(null);
+    } else {
+      setExpandedUser(index);
+    }
+  };
+  
+  return (
+    <>
+      <Box component="form"
+        sx={{
+          '& > :not(style)': { m: 1, width: '25ch' },
+        }}
+        noValidate
+        autoComplete="off"
+        onSubmit={handleSubmit}
+      >
+        <TextField name="name" label="Enter Your Name:-" type="text" value={name} onChange={handleInputChange} variant="outlined" required /> <br />
+        {nameHelperText && <span style={{color:"red", fontSize:"small"}}>{nameHelperText}</span>}
+        {nameError && (
+          <span style={{ color: 'Red' }}>{nameError}</span>
+        )} <br />
+
+        <TextField name="mobileNumber" label="Enter Your Mobile Number:-" type="number" value={mobileNumber} onChange={handleInputChange} variant="outlined" required /> <br />
+        {mobileNumberHelperText && <span style={{color:"red", fontSize:"small"}}>{mobileNumberHelperText}</span>}
+        {mobileNumberError && (
+          <span style={{ color: 'Red' }}>{mobileNumberError}</span>
+        )} <br />
+
+        <TextField name="email" label="Enter Your Email:-" type="email" value={email} onChange={handleInputChange} variant="outlined" required /> <br />
+        {emailHelperText && <span style={{color:"red", fontSize:"small"}}>{emailHelperText}</span>}
+        {emailError && (
+          <span style={{ color: 'Red' }}>{emailError}</span>
+        )} <br />
+
+        <TextField name="country" label="Enter Your Country:-" type="text" value={country} onChange={handleInputChange} variant="outlined" required /> <br />
+        {countrylHelperText && <span style={{color:"red", fontSize:"small"}}>{countrylHelperText}</span>}
+        {countryError && (
+          <span style={{color: 'Red' }}>{countryError}</span>
+        )} <br />
+
+        <TextField name="city" label="Enter Your City:-" type="text" value={city} onChange={handleInputChange} variant="outlined" required /> <br />
+        {cityHelperText && <span style={{color:"red", fontSize:"small"}}>{cityHelperText}</span>}
+        {cityError && (
+          <span style={{color: 'Red'}}>{cityError}</span>
+        )
+        } <br />
+        <CustomButton type="submit">Submit</CustomButton>
+      </Box>
+
+      <Box 
+       sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}>
+      {dropdownData.length > 0 && (
+        <div>
+        <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Data</InputLabel>
+        <Select
+  labelId="demo-simple-select-label"
+  id="demo-simple-select"
+  value={expandedUser !== null ? dropdownData[expandedUser].name : ''}
+  label="Data"
+  onChange={handleInputChange}
+>
+  {dropdownData.map((data, index) => (
+    <MenuItem key={index}>
+      <div>
+        <ListItemText primary={`${data.name}, ${data.email}`} />
+        {index === dropdownData.length - 1 && (
+          <ListItemSecondaryAction>
+            <IconButton onClick={() => handleExpandUser(index)}>
+              {expandedUser === index ? <RemoveIcon /> : <AddIcon />}
+            </IconButton>
+          </ListItemSecondaryAction>
+        )}
+      </div>
+      {expandedUser === index && (
+        <Collapse in={expandedUser === index}>
+          <List component="div" disablePadding>
+            <ListItem>
+              <ListItemText primary={`City: ${data.city}`} />
+            </ListItem>
+            <ListItem>
+              <ListItemText primary={`Country: ${data.country}`} />
+            </ListItem>
+            <ListItem>
+              <ListItemText primary={`Mobile Number: ${data.mobileNumber}`} />
+            </ListItem>
+          </List>
+        </Collapse>
+      )}
+    </MenuItem>
+  ))}
+</Select>
+
+      </FormControl>
+        </div>
+        )}
+        </Box>
+    </>
+  );
+};
+const blue = {
+  500: '#007FFF',
+  600: '#0072E5',
+  700: '#0059B2',
+};
+
+const CustomButton = styled(Button)`
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    background-color: ${blue[500]};
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: white;
+    transition: all 150ms ease;
+    cursor: pointer;
+    border: none;
+  
+    &:hover {
+      background-color: ${blue[600]};
+    }
+  
+    &.${buttonClasses.active} {
+      background-color: ${blue[700]};
+    }
+  
+    &.${buttonClasses.focusVisible} {
+      box-shadow: 0 4px 20px 0 rgba(61, 71, 82, 0.1), 0 0 0 5px rgba(0, 127, 255, 0.5);
+      outline: none;
+    }
+  `;
+export default FormDropdown;

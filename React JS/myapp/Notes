@@ -175,7 +175,15 @@ Performing CRUD App with React and JSON Server--
 Rendering Lists--
 -We can use filter() and map() method to filter and transform array of data into an array of components.
 
+Passing Props to a component--
+-Props are the information that you pass to a JSX tag.
+-React components use props to communicate with each other.
+-Every parent component can pass some information to its child components by giving them props.
+-For ex.- className, src, alt, height and width are some of the props we can pass to an <img> tag.
 
+Events and event handlers--
+-React lets you add event handlers to your JSX.
+-Event handlers are your own functions that will be triggered in response to interactions like clicking, hovering, focusing form inputs and so on.
 
 
 
