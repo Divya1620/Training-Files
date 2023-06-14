@@ -1,0 +1,58 @@
+React:-
+-React.js is an JavaScript Library developed and maintained by Facebook.
+-It is used to build interactive user interfaces.
+-We can create Single Page Applications(SPA) with react.
+-An SPA roads only once then partially uploads the page as per user request.
+-With react we can built custom HTML elements.
+-React is all about "Components".
+-Some examples of applications created with react are- Facebook, Netflix, Airbnb, Instagram, New York Times.
+
+Set up react:-
+-For react we need 3 things node, npm and create-react project
+-We create react project with the cmd-
+npx create-react-app my-app(project name)
+cd my-app
+npm start
+
+JSX:-
+-JSX stands for JavaScript and XML.
+-It is a JavaScript syntax extension that allows us to write js and HTML together in a react.
+
+Components:- 
+-A component is one of the core building blocks of react.
+-It is an independent and reusable bit of code which divides UI into smaller pieces.
+-Component cann be as tiny as a button and as large as entire page.
+-We can split components into multiple components.
+
+Props:-
+-Props stands for Propertits.
+-Props allow us to pass data from one component to other components as an argument.
+
+State:-
+-The State is a built-in react object that is used to contain data or information about the component.
+-With state we can set and change values.
+-Whenever the  state change, the component re-renders where the state is register.
+const [stateName, setStateMethod] = useState(value);
+
+Events:-
+-Events are an function that is performed by an user.
+-We have events like onClick, onChange and so on.
+-We pass a function to trigger an action that is known as Event Handling.
+
+Two Way Data Binding:-
+-Two-way data binding refers to the synchronization of data between a component's state and it's UI elements.
+-In 2 way binding the data flows in both directions.
+-It means we just don't listen to changes but also pass a new value back into the input that is 2-way data binding in react.
+
+Note:--
+For onClick event we should pass--
+-A function to events that should execute when an event occurs.
+
+Passing Child-to-Parent components--
+-We can accept a function via props and call it from inside the child component then trigger some action in the parent component (which passed the function).
+
+Map method--
+-It creates a new array and transform every element in the original array.
+
+Keys--
+-In react you should always add a key when mapping out lists of items.
